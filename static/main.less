@@ -1,0 +1,284 @@
+﻿
+
+
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+}
+
+
+@lightGray: #555555;
+@darkGray: #494949;
+@orange: #EB6841;
+
+.bold{font-weight: bold;}
+.center{text-align: center;}
+
+
+.wrapper{
+	position: relative;
+	min-height: 95%;
+	padding-bottom: 50px;
+	display: block;
+
+	background-color: #FDFDFD;
+}
+
+.head{
+	width: 100%;
+	height: 128px;
+
+	background-color: #00A0B0;
+	border-bottom: solid 3px #ffffff;
+
+	-moz-box-shadow: inset 		0px -5px 4px 0px rgba(0,0,0 ,0.10);
+	-webkit-box-shadow: inset 	0px -5px 4px 0px rgba(0,0,0 ,0.10);
+	box-shadow: inset 			0px -5px 4px 0px rgba(0,0,0 ,0.10);
+
+	.inside{
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 0 30px;
+
+		.icon{
+			width: 15%;
+			float: left;
+
+			margin-top: 15px;
+
+			img{
+				min-width: 67px;
+				min-height: 96px;
+				padding-right: 50px;
+			}
+		}
+
+		.ipform{
+			width: 70%;
+
+			float: left;
+
+			::-webkit-input-placeholder{color: #BDBDBD;}
+			:-moz-placeholder{color: #BDBDBD;}
+			::-moz-placeholder{color: #BDBDBD;}
+			:-ms-input-placeholder{color: #BDBDBD;}
+
+
+
+			input{
+				float: left;
+				min-width: 100%;
+
+				background-color: #ffffff;
+				border: solid 1px #EAEAEA;
+				box-shadow: none;
+
+				font-size: 20px;
+
+				padding-left: 10px;
+				padding-right: 10px;
+
+				margin-top: 38px;
+				margin-left: -35px;
+				height: 48px;
+
+				border-radius: 			3px 0px 0px 3px;
+				-moz-border-radius: 	3px 0px 0px 3px;
+				-webkit-border-radius: 	3px 0px 0px 3px;
+			}
+
+			input:focus{
+				outline: none;
+			}
+
+			.search{
+				position: absolute;
+
+				cursor: pointer;
+
+				margin-top: 38px; 
+
+				background-color: #EB6841;
+				height: 52px;
+
+				border-radius: 			0px 3px 3px 0px;
+				-moz-border-radius: 	0px 3px 3px 0px;
+				-webkit-border-radius: 	0px 3px 3px 0px;
+
+				-moz-box-shadow: inset 		-3px -3px 3px 0px rgba(0,0,0 ,0.05);
+				-webkit-box-shadow: inset 	-3px -3px 3px 0px rgba(0,0,0 ,0.05);
+				box-shadow: inset 			-3px -3px 3px 0px rgba(0,0,0 ,0.05);
+
+
+				img{
+					padding: 10px 10px 0 10px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+.message{
+    display:none;
+
+    .center;
+
+    max-width: 1280px;
+	margin: 0 auto;
+	padding: 30px 30px 0 30px;
+
+	margin-bottom: -52px;
+
+	font-size: 18px;
+	color: @orange;
+	text-transform: capitalize;
+
+	span{
+		font-size: 16px;
+		.bold;	
+	}
+	
+
+}
+
+
+.content{
+	width: 100%;
+
+	margin-bottom: 30px;
+
+	.ipinfo{
+	    max-width: 1280px;
+		margin: 0 auto;
+		padding: 140px 30px 30px 30px;
+
+		#map{
+		    width: 48%;
+		    height: 478px;
+
+		    margin-right: 15px;
+
+		    display:inline-block;
+
+		    background-color: #FFFFFF;
+		    border: solid 2px #ffffff;
+			
+			-moz-box-shadow: 		3px 3px 3px 0px rgba(0,0,0 ,0.10);
+			-webkit-box-shadow: 	3px 3px 3px 0px rgba(0,0,0 ,0.10);
+			box-shadow: 			3px 3px 3px 0px rgba(0,0,0 ,0.10);
+
+		}
+
+		.details{
+			width: 48%;
+
+			margin-left: 15px;
+
+		    display:inline-block;
+		    vertical-align: top;
+
+		    table{
+		    	border-spacing: 0px;
+		    	width: 100%;
+
+		    	border-top: solid 1px #ECECEC;
+
+		    	tbody{
+		    		tr{
+
+		    			td.key{
+		    				padding: 10px 10px 10px 15px;
+		    				width: 30%;
+
+		    				font-size: 12px;
+		    				color: @darkGray;
+		    				.bold;
+
+		    				background-color: #F9F9F9;
+		    				border: solid 1px #ECECEC;
+		    				border-top: none;
+
+		    			}
+		    			td.value{
+		    				padding: 10px 10px 10px 15px;
+		    				width: 80%;
+
+		    				background-color: #ffffff;
+		    				border-bottom: solid 1px #ECECEC;
+		    				border-right: solid 1px #ECECEC;
+
+		    				span{
+		    					font-size: 12px;
+		    					color: #B3B3B3;
+		    				}
+
+		    			}
+		    		}
+		    	}
+		    }
+		}
+
+	}
+}
+
+
+.footer{
+	height: 50px;
+	width: 100%;
+	position: absolute;
+
+	background-color: #ffffff;
+	border-top: solid 2px #ffffff;
+
+	-moz-box-shadow: inset 		0px 3px 3px 0px rgba(0,0,0 ,0.05);
+	-webkit-box-shadow: inset 	0px 3px 3px 0px rgba(0,0,0 ,0.05);
+	box-shadow: inset 			0px 3px 3px 0px rgba(0,0,0 ,0.05);
+	
+	.inside{
+		 max-width: 1280px;
+		margin: 0 auto;
+		padding: 19px 30px 0 30px;
+
+		text-align: right;
+
+		a{
+			color: @orange;
+			.bold;
+			font-size: 12px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

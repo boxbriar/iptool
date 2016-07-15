@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>IPTool</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/main.css" />
+    <link rel="shortcut icon" type="image/png" href="/static/img/favicon.ico" />
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="head">
+            <div class="inside">
+                <div class="icon"><img src="/static/img/ipLogo.png"/></div>
+                <div class="ipform">
+                    <input name="ip" placeholder="IP or Domain name" />
+                    <a class="search"><img src="/static/img/search.png" /></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Holds error message -->
+        <div class="message"></div>
+        <!---->
+
+        <!-- Main content -->
+        <div class="content">
+            <div class="ipinfo">
+                <div id="map"></div>
+                <div class="details">
+                    <table>
+                        <tr class="query"><td class="key">IP</td><td class="value"><span>---</span></td></tr>
+                        <tr class="country"><td class="key">Country</td><td class="value"><span>---</span></td></tr>
+                        <tr class="countryCode"><td class="key">Country Code</td><td class="value"><span>---</span></td></tr>
+                        <tr class="region"><td class="key">Region</td><td class="value"><span>---</span></td></tr>
+                        <tr class="regionName"><td class="key">Region Code</td><td class="value"><span>---</span></td></tr>
+                        <tr class="city"><td class="key">City</td><td class="value"><span>---</span></td></tr>
+                        <tr class="zip"><td class="key">Zipcode</td><td class="value"><span>---</span></td></tr>
+                        <tr class="lat"><td class="key">Latitude</td><td class="value"><span>---</span></td></tr>
+                        <tr class="lon"><td class="key">Longitude</td><td class="value"><span>---</span></td></tr>
+                        <tr class="timezone"><td class="key">Timezone</td><td class="value"><span>---</span></td></tr>
+                        <tr class="isp"><td class="key">ISP</td><td class="value"><span>---</span></td></tr>
+                        <tr class="org"><td class="key">Organization</td><td class="value"><span>---</span></td></tr>
+                        <tr class="as"><td class="key">AS number/name</td><td class="value"><span>---</span></td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="push"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="inside">
+            <a href="">Github Link</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Replace with your GoogleMaps API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOAN3nfwIfAXm1QXnXpxEtnaMx1S4fwNU&callback=findTarget" async defer></script>
+    <!---->
+    <script src="/static/main.js"></script> 
+</body>
+</html>
