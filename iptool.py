@@ -20,6 +20,11 @@ def lookup():
         target = request.remote_addr
         if target in LOCAL:
             target = "google.com"
+    # Remove scheme/path from target if exists
+    if "//" in target:
+        target = target.split("//")[1]
+        if "/" in target:
+            target = target.split("/")[0]
     
     # Make request to ip-api.com json api.
     try:
