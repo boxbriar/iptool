@@ -184,3 +184,64 @@ body {
   font-weight: bold;
   font-size: 12px;
 }
+/* ------------------------------------------------------------------------------------------------------ Media Queries */
+/*  Small  */
+@media (min-width: 651px) and (max-width: 1024px) {
+  .wrapper .head .inside .icon {
+    width: 20%;
+  }
+  .wrapper .head .inside .ipform {
+    width: 73%;
+  }
+  .wrapper .content .ipinfo {
+    padding-top: 70px;
+  }
+  .wrapper .content .ipinfo #map {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .wrapper .content .ipinfo .details {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+}
+/*  Extra Small  */
+@media (max-width: 650px) {
+  .wrapper .head {
+    height: 240px;
+  }
+  .wrapper .head .inside .icon {
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper .head .inside .icon img {
+    padding-right: 0px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .wrapper .head .inside .ipform {
+    width: 100%;
+    display: flex;
+  }
+  .wrapper .head .inside .ipform input {
+    margin-left: 0px;
+    min-width: 50%;
+    flex-grow: 1;
+  }
+  .wrapper .head .inside .ipform a {
+    position: relative;
+  }
+  .wrapper .content .ipinfo {
+    padding-top: 70px;
+  }
+  .wrapper .content .ipinfo #map {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .wrapper .content .ipinfo .details {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+}
