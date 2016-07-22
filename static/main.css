@@ -82,6 +82,7 @@ body {
 }
 .head .inside .ipform .search {
   position: absolute;
+  margin-left: -2px;
   cursor: pointer;
   margin-top: 38px;
   background-color: #EB6841;
