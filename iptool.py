@@ -17,9 +17,9 @@ def lookup():
     target = request.args.get("target")
     if not target:
         # Use request ip if target arg not set.
-        target = request.remote_addr
-        if target in LOCAL:
-            target = "google.com"
+        target = "google.com"
+        if len(request.access_route) > 0 and request.access_route[0] not in LOCAL:
+            target = request.access_route[0]
     # Remove scheme/path from target if exists
     if "//" in target:
         target = target.split("//")[1]
